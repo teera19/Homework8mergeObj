@@ -10,8 +10,10 @@ function mergeObjects(...objects){
     });
     return hwobj;
 }
-const obj1 = { name: 'iPond', age: 22 };
-const obj2 = { age: 23};
 
-const mergeobj = mergeObjects(obj1, obj2);
-console.log( mergeobj);
+let obj1 = {name: "Andy", age: 25}
+let obj2 = {gender: "M", age: 30}
+let obj3 = {name: "Bobby", age: 35}
+
+console.log(mergeObjects(obj1, obj2, obj3));
+console.log(mergeObjects(obj2, obj3, obj1));
